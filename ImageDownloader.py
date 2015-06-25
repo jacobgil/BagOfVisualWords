@@ -2,11 +2,11 @@ import os
 import sys
 import time
 import urllib
-from urllib.request import FancyURLopener
+from urllib import FancyURLopener
 import json
 
 # Define search term
-searchTerm = "windows 7 desktop items"
+searchTerm = sys.argv[1]
 
 # Replace spaces ' ' in search term for '%20' in order to comply with request
 searchTerm = searchTerm.replace(' ','%20')
